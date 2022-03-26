@@ -4,6 +4,7 @@ import searchIcon from '../images/searchIcon.svg'
 
 import './History.css'
 export default memo(function History({ handleSearch, result }) {
+    console.log('history render')
     const [hisotry, setHisotry] = useState([])
 
     const handleDeleteItem = (key) => {
@@ -13,20 +14,25 @@ export default memo(function History({ handleSearch, result }) {
 
 
     const allStorage = useCallback(() => {
-        console.log('storage call')
         let values = [],
             keys = Object.keys(localStorage),
             i = keys.length;
         while (i--) {
             values.push({ ...JSON.parse(localStorage.getItem(keys[i])), key: keys[i] });
         }
+
+        values.sort((a, b) => {
+            const a_timeStamp = a.key.split('_')[1]
+            const b_timeStamp = b.key.split('_')[1]
+            return b_timeStamp - a_timeStamp
+        })
         return values;
     }, [])
-    console.log('allStorage: ', allStorage())
 
     useEffect(() => {
         setHisotry(allStorage())
     }, [allStorage, result])
+
 
     return (
         <div className='history-container'>
@@ -41,7 +47,7 @@ export default memo(function History({ handleSearch, result }) {
 
                         <div className='left-info'>
                             <span className='item-index'>{index + 1}.</span>
-                            <span>{city},</span>
+                            {city && <span>{city},</span>}
                             <span>{country}</span>
                         </div>
                         <div className='right-controller'>

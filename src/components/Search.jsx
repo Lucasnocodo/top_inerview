@@ -10,7 +10,6 @@ export default memo(function Search({ result, handleSearch, init, isLoading }) {
     const targetRef = useRef();
     const [containerWidth, setContainerWidth] = useState(0);
 
-    console.log('containerWidth', containerWidth)
     useLayoutEffect(() => {
         if (targetRef.current) {
             setContainerWidth(targetRef.current.offsetWidth);
