@@ -1,0 +1,22 @@
+.skeleton-box {
+    height: 157px;
+    margin: 15px;
+}
+
+.skeleton {
+    background-color: #DDDBDD;
+    margin-bottom: 5px;
+    height: 22px;
+
+}
+.city {
+    width: 70px;
+}
+.text {
+    width: 300px;
+}
+
+.main {
+    width: 150px;
+    height: 38px;
+}

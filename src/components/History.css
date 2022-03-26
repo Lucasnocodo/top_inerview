@@ -1,0 +1,51 @@
+.history-container {
+  
+    margin: 0 1rem;
+
+}
+
+.history-title {
+    position: fixed;
+    background: #fff;
+    height: 60px;
+}
+
+.history-items {
+    max-height: 310px;
+    overflow: auto;
+}
+
+.item-box {
+    border-bottom: 1px #f0f0f0 solid;
+    height: 30px;
+  
+}
+
+.item-index {
+    margin-right: 5px;
+}
+
+.left-info {
+    float: left;
+}
+
+.right-controller {
+    float: right;
+}
+
+.icon-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #aea8a8;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 8px;
+}
+
+.icon-button:hover {
+    background: gray;
+}

@@ -1,0 +1,12 @@
+.App {
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+
+
+.title {
+    border-bottom: 1px solid #d8d4d4;
+    padding: 1rem;
+}
