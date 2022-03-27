@@ -16,7 +16,7 @@
 .item-box {
     border-bottom: 1px #f0f0f0 solid;
     height: 30px;
-  
+    line-height: 30px;
 }
 
 .item-index {

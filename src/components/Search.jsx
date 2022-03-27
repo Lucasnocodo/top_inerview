@@ -1,5 +1,5 @@
 import React, { useRef, useLayoutEffect, useState, memo, useCallback } from 'react';
-import Skeleton from './Skeleton';
+import Skeleton from './Skeleton'
 import './Search.css'
 
 const initSearchState = { inputCity: '', inputCountry: '' }

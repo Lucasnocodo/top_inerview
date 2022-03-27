@@ -4,12 +4,11 @@
 }
 .search-bar {
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr
+    grid-template-columns: 3fr 3fr 2fr;
 }
 
 .search-box {
     display: inline-block;
-    /* width: 35%; */
 }
 
 .button-box {
